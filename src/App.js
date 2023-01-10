@@ -16,7 +16,7 @@ function App() {
     const loadedTasks = [];
 
     for (const taskKey in data) {
-        loadedTasks.push({ id: taskKey, text: data[taskKey].text });
+        loadedTasks.push({ id: taskKey, text: taskObj[taskKey].text });
     }
 
     setTasks(loadedTasks);
