@@ -7,11 +7,12 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const loadedTasks = [];
 
-        for (const taskKey in data) {
-            loadedTasks.push({ id: taskKey, text: data[taskKey].text });
-        }
+  for (const taskKey in data) {
+      loadedTasks.push({ id: taskKey, text: data[taskKey].text });
+  }
 
-        setTasks(loadedTasks);
+  setTasks(loadedTasks);
+  
   return (
     <React.Fragment>
       <NewTask onAddTask={taskAddHandler} />
