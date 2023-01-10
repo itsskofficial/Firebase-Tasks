@@ -11,6 +11,8 @@ function App() {
 
 
   const [tasks, setTasks] = useState([]);
+
+  const transformTasks = taskObj)
   const loadedTasks = [];
 
   for (const taskKey in data) {
