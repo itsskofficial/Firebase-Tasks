@@ -6,7 +6,7 @@ import useHttp from './hooks/useHttp';
 
 function App() {
   const response = useHttp({
-    url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json'
+    url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
   })
 
 
