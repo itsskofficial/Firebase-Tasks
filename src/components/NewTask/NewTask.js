@@ -11,6 +11,8 @@ const NewTask = (props) => {
     props.onAddTask(createdTask);
   }
 
+  const response = useHttp(transformTasks)
+
   const enterTaskHandler = async (taskText) => {
     const response = useHttp({ url: 'https://react-http-6b4a6.firebaseio.com/tasks.json' },
       {
