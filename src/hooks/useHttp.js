@@ -27,8 +27,9 @@ const useHttp = (requestConfig) => {
         }
 
         setTasks(loadedTasks);
-        } catch (err) {
-        setError(err.message || 'Something went wrong!');
+        }
+        catch (err) {
+            setError(err.message || 'Something went wrong!');
         }
         setIsLoading(false);
     };
