@@ -22,12 +22,11 @@ function App() {
     setTasks((prevTasks) => prevTasks.concat(task));
   };
 
-  const response = useHttp({
-    url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
-  }, transformTasks)
+  const response = useHttp( transformTasks)
 
   useEffect(() => {
-    response.sendRequest();
+    response.sendRequest( url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
+  },);
 }, [response.sendRequest]);
   
   return (
