@@ -21,10 +21,14 @@ function App() {
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
   };
-  
+
   const response = useHttp({
     url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
   }, transformTasks)
+
+  useEffect(() => {
+    fetchTasks();
+}, []);
   
   return (
     <React.Fragment>
