@@ -38,7 +38,7 @@ const useHttp = (requestConfig) => {
         fetchTasks();
     }, []);
 
-    return 
+    return [isLoading,error]
 
     const taskAddHandler = (task) => {
         setTasks((prevTasks) => prevTasks.concat(task));
