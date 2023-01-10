@@ -24,11 +24,10 @@ const NewTask = (props) => {
     }
     );
   }
-  };
 
   return (
     <Section>
-      <TaskForm onEnterTask={enterTaskHandler} loading={isLoading} />
+      <TaskForm onEnterTask={enterTaskHandler} loading={response.isLoading} />
       {error && <p>{error}</p>}
     </Section>
   );
