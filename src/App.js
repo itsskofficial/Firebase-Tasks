@@ -4,7 +4,7 @@ import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
 
 function App() {
-  
+  const [tasks, setTasks] = useState([]);
 
   return (
     <React.Fragment>
