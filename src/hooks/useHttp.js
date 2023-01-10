@@ -38,6 +38,8 @@ const useHttp = (requestConfig) => {
         fetchTasks();
     }, []);
 
+    return 
+
     const taskAddHandler = (task) => {
         setTasks((prevTasks) => prevTasks.concat(task));
     };
