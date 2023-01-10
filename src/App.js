@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     response.sendRequest();
-}, []);
+}, [response.sendRequest]);
   
   return (
     <React.Fragment>
