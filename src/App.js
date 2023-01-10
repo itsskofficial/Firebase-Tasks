@@ -10,7 +10,6 @@ function App() {
   })
 
 
-  ---------
   const [tasks, setTasks] = useState([]);
   const loadedTasks = [];
 
