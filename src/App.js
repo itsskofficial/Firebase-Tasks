@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import Tasks from './components/Tasks/Tasks';
 import NewTask from './components/NewTask/NewTask';
+import useHttp from './hooks/useHttp';
 
 function App() {
-  const response
+  const response=useHttp()
   const [tasks, setTasks] = useState([]);
   const loadedTasks = [];
 
