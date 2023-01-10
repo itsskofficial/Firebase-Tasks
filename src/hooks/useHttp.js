@@ -7,7 +7,10 @@ const useHttp = (requestConfig) => {
         setError(null);
         try {
         const response = await fetch(
-            'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json'
+            requestConfig.url, {
+                method: requestConfig.method,
+                
+            }
         );
 
         if (!response.ok) {
