@@ -8,7 +8,6 @@ const NewTask = (props) => {
   const [error, setError] = useState(null);
 
   const enterTaskHandler = async (taskText) => {
-    try {
       const response = await fetch(
         'https://react-http-6b4a6.firebaseio.com/tasks.json',
         {
