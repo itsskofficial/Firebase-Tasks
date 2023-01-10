@@ -29,7 +29,7 @@ function App() {
         items={tasks}
         loading={response.isLoading}
         error={response.error}
-        onFetch={fetchTasks}
+        onFetch={response.fetchTasks}
       />
     </React.Fragment>
   );
