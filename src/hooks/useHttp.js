@@ -4,7 +4,7 @@ const useHttp = (requestConfig,applyData) => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const sendRequest = (useCallback(async () => {
+    const sendRequest = (useCallback(async (requestConfig) => {
         setIsLoading(true);
         setError(null);
         try {
