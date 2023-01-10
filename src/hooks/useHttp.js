@@ -10,7 +10,7 @@ const useHttp = (requestConfig,applyData) => {
             requestConfig.url, {
                 method: requestConfig.method,
                 headers: requestConfig.headers,
-                body:requestConfig.body
+                body:JSON.stringify(requestConfig.body)
             }
         );
 
