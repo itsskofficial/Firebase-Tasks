@@ -9,8 +9,7 @@ const NewTask = (props) => {
   const [error, setError] = useState(null);
 
   const enterTaskHandler = async (taskText) => {
-      const response = useHttp({url:''}
-        'https://react-http-6b4a6.firebaseio.com/tasks.json',
+      const response = useHttp({url:'https://react-http-6b4a6.firebaseio.com/tasks.json'}
         {
           method: 'POST',
           body: JSON.stringify({ text: taskText }),
