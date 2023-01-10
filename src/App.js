@@ -8,7 +8,7 @@ function App() {
   const response = useHttp({
     url:''
   })
-  
+
   const [tasks, setTasks] = useState([]);
   const loadedTasks = [];
 
@@ -27,8 +27,8 @@ function App() {
       <NewTask onAddTask={taskAddHandler} />
       <Tasks
         items={tasks}
-        loading={isLoading}
-        error={error}
+        loading={response.isLoading}
+        error={response.error}
         onFetch={fetchTasks}
       />
     </React.Fragment>
