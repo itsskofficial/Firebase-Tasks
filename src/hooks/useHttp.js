@@ -1,4 +1,4 @@
-const useHttp = (requestConfig) => {
+const useHttp = (requestConfig,applyData) => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
@@ -20,7 +20,7 @@ const useHttp = (requestConfig) => {
 
         const data = await response.json();
 
-        
+        applyData(data)
         }
         catch (err) {
             setError(err.message || 'Something went wrong!');
