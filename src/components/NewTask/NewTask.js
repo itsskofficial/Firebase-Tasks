@@ -14,7 +14,16 @@ const NewTask = (props) => {
   const response = useHttp(createTasks)
 
   const enterTaskHandler = async (taskText) => {
-    response.sendRequest({}) 
+    response.sendRequest({url: 'https://react-http-6b4a6.firebaseio.com/tasks.json' },
+    {
+      method: 'POST',
+      body: JSON.stringify({ text: taskText }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
+    );
+  }
   };
 
   return (
