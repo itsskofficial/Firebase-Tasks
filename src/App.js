@@ -27,7 +27,7 @@ function App() {
   }, transformTasks)
 
   useEffect(() => {
-    fetchTasks();
+    response.sendRequest();
 }, []);
   
   return (
