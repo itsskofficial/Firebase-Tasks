@@ -8,7 +8,7 @@ const useHttp = (requestConfig,applyData) => {
         try {
         const response = await fetch(
             requestConfig.url, {
-                method: requestConfig.method,
+                method: requestrequestConfig.method,
                 headers: requestConfig.headers,
                 body:JSON.stringify(requestConfig.body)
             }
