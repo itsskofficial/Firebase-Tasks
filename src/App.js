@@ -5,10 +5,6 @@ import NewTask from './components/NewTask/NewTask';
 import useHttp from './hooks/useHttp';
 
 function App() {
-  const response = useHttp({
-    url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
-  }, transformTasks)
-
 
   const [tasks, setTasks] = useState([]);
 
@@ -25,6 +21,10 @@ function App() {
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
   };
+  
+  const response = useHttp({
+    url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
+  }, transformTasks)
   
   return (
     <React.Fragment>
