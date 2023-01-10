@@ -40,7 +40,8 @@ const useHttp = (requestConfig) => {
 
     return {
         isLoading: isLoading,
-        error:error
+        error: error,
+        sendRequest
     }
 
     const taskAddHandler = (task) => {
