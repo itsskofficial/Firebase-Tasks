@@ -36,6 +36,5 @@ const NewTask = (props) => {
       {error && <p>{error}</p>}
     </Section>
   );
-};
 
 export default NewTask;
