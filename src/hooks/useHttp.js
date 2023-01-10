@@ -25,13 +25,9 @@ const useHttp = (requestConfig,applyData) => {
         catch (err) {
             setError(err.message || 'Something went wrong!');
         }
-        
+
         setIsLoading(false);
     };
-
-    useEffect(() => {
-        fetchTasks();
-    }, []);
 
     return {
         isLoading: isLoading,
