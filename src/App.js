@@ -25,8 +25,8 @@ function App() {
   const response = useHttp( transformTasks)
 
   useEffect(() => {
-    response.sendRequest( url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
-  },);
+    response.sendRequest( {url:'https://tasks-54c86-default-rtdb.firebaseio.com/tasks.json',
+  });
 }, [response.sendRequest]);
   
   return (
