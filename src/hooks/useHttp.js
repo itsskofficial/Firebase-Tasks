@@ -18,12 +18,14 @@ const useHttp = (requestConfig,applyData) => {
             throw new Error('Request failed!');
         }
 
-            const data = await response.json()
+        const data = await response.json()
         applyData(data)
         }
+
         catch (err) {
             setError(err.message || 'Something went wrong!');
         }
+        
         setIsLoading(false);
     };
 
