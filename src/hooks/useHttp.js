@@ -42,3 +42,5 @@ const useHttp = (requestConfig) => {
         setTasks((prevTasks) => prevTasks.concat(task));
     };
 }
+
+export default useHttp
