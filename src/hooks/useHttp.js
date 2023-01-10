@@ -37,10 +37,6 @@ const useHttp = (requestConfig,applyData) => {
         error: error,
         sendRequest:sendRequest
     }
-
-    const taskAddHandler = (task) => {
-        setTasks((prevTasks) => prevTasks.concat(task));
-    };
 }
 
 export default useHttp
