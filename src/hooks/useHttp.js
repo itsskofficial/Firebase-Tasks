@@ -41,7 +41,7 @@ const useHttp = (requestConfig) => {
     return {
         isLoading: isLoading,
         error: error,
-        sendRequest
+        sendRequest:sendRequest
     }
 
     const taskAddHandler = (task) => {
