@@ -12,15 +12,15 @@ const NewTask = (props) => {
   }
 
   const enterTaskHandler = async (taskText) => {
-      const response = useHttp({url:'https://react-http-6b4a6.firebaseio.com/tasks.json'},
-        {
-          method: 'POST',
-          body: JSON.stringify({ text: taskText }),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
+    const response = useHttp({ url: 'https://react-http-6b4a6.firebaseio.com/tasks.json' },
+      {
+        method: 'POST',
+        body: JSON.stringify({ text: taskText }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
   };
 
   return (
@@ -29,5 +29,6 @@ const NewTask = (props) => {
       {error && <p>{error}</p>}
     </Section>
   );
+}
 
 export default NewTask;
