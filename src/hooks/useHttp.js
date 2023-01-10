@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 
-const useHttp = (requestConfig,applyData) => {
+const useHttp = (applyData) => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
