@@ -29,7 +29,7 @@ const useHttp = (applyData) => {
         }
 
         setIsLoading(false);
-    }),[]);
+    }),[applyData]);
 
     return {
         isLoading: isLoading,
