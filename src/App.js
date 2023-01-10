@@ -12,14 +12,10 @@ function App() {
 
   const [tasks, setTasks] = useState([]);
 
-  const transformTasks = taskObj)
-  const loadedTasks = [];
+  const transformTasks = (taskObj) => {
 
-  for (const taskKey in data) {
-      loadedTasks.push({ id: taskKey, text: data[taskKey].text });
   }
-
-  setTasks(loadedTasks);
+  
 
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
