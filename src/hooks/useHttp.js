@@ -9,7 +9,8 @@ const useHttp = (requestConfig) => {
         const response = await fetch(
             requestConfig.url, {
                 method: requestConfig.method,
-                
+                headers: requestConfig.headers,
+                body:requestConfig.body
             }
         );
 
