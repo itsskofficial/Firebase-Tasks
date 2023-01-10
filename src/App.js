@@ -16,7 +16,7 @@ function App() {
     }
 
     setTasks(loadedTasks);
-  })
+  },[])
 
   const taskAddHandler = (task) => {
     setTasks((prevTasks) => prevTasks.concat(task));
